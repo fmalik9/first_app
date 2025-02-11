@@ -8,6 +8,11 @@ class GradientContainer extends StatelessWidget{
 
 @override
 Widget build(BuildContext context) {
+  var activeDiceImage = 'assets/images/dice-2.png';
+  void rollDice(){
+    activeDiceImage = 'assets/images/dice-4.png';
+    print("Rolling the dice!")
+  }
   return Container (
     decoration: const BoxDecoration(
       gradient: LinearGradient(
@@ -21,15 +26,29 @@ Widget build(BuildContext context) {
       ),
     ),
     child: Center(
-        child: Image.asset(
-          'assets/images/dice-2.png',
-          width: 200,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset(
+              'assets/images/dice-2.png',
+              width: 200,
+            ),
+            TextButton(
+              onPressed: () {},
+              style: TextButton.styleFrom(
+                padding: const EdgeInsets.all(20),
+                foregroundColor: Colors.white,
+                textStyle: const TextStyle(
+                  fontSize: 28,
+                ),
+              ),
+              child: const Text("Roll the Die"),
+            ),
+          ],
         ),
-      ),
+    )
 
-  );
 }
-   
+}
     
   
-}
