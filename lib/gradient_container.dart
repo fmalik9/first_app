@@ -20,7 +20,12 @@ Widget build(BuildContext context) {
 
       ),
     ),
-      child: Centered("Welcome to ITEC 315"),
+    child: Center(
+        child: Image.asset(
+          'assets/images/dice-2.png',
+          width: 200,
+        ),
+      ),
 
   );
 }
