@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 
 class Centered extends StatelessWidget{
   Centered(this.text,{super.key});
-  Alignment startAlignment;
-  Alignment endAlignment;
   String text;
   @override
 

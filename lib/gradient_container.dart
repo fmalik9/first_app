@@ -2,6 +2,7 @@ import 'package:first_app/centered.dart';
 import 'package:first_app/dice_roller.dart';
 import 'package:flutter/material.dart';
 
+
 class GradientContainer extends StatelessWidget {
   GradientContainer(this.startAlignment, this.endAlignment, {super.key});
   Alignment startAlignment;
